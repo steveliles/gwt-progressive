@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Activation Test 9</title>    
+    <style>
+      .test-widget { border:2px solid red; padding:10px; margin:10px;}
+      .inner { border:2px solid blue; padding:10px; }
+    </style>
+  </head>
+  <body>
+    
+    <h1>Testing @RootBinding annotations</h1>
+    
+    <h4>Blue border = widget1 (@RootBinding(tag="div"))</h4>
+    <h4>Red border = widget2 (@RootBinding(cssClass="root9"))</h4>
+    <h4>Green border = widget3 (@RootBinding(tag="div", cssClass="root9"))</h4>
+    
+    <div>
+      <h3>I'm bound by tag-name only (@RootBinding(tag="div")), i should have a blue border</h3>
+      <div>I'm a div, I don't get scanned because my parent was bound!</div>
+    </div>
+    
+    <span class="root9" style="display:block" text="whoop!" int="12" long="1234567891011" float="2.3" double="67980923.2342" boolean="true" bespoke="50x50">
+      <h3>I'm bound by css-class only (@RootBinding(cssClass="root9")), i should have a red border</h3>      
+    </span> 
+    
+    <div class="root9">
+      <h3>I'm bound by tag and css-class (@RootBinding(tag="div", cssClass="root9"), i should have a green border</h3>
+      <h5 class="h5">I'm a nested widget from a different package</h5>
+    </div>
+    
+    <script type="text/javascript" language="javascript" src="Example9/Example9.nocache.js?cache=${build.timestamp}"></script>
+    <iframe src="javascript:''" id="__gwt_historyFrame" style="position:absolute;width:0;height:0;border:0"></iframe>
+  </body>
+</html>

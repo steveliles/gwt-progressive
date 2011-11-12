@@ -1,0 +1,6 @@
+<module rename-to="Example10">
+  <inherits name="com.google.gwt.user.User"/>
+  <inherits name="com.sjl.gwt.progressive.Progressive"/>
+  
+  <entry-point class="com.sjl.gwt.progressive.client.Example10" /> 
+</module>

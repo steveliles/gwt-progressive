@@ -1,0 +1,11 @@
+<module>
+  <generate-with class="com.sjl.gwt.progressive.rebind.ActivatorGenerator">
+    <any>
+      <when-type-assignable class="com.sjl.gwt.progressive.client.ElementActivator"/>
+      <when-type-assignable class="com.sjl.gwt.progressive.client.WidgetActivator"/>
+    </any>
+  </generate-with>
+  <generate-with class="com.sjl.gwt.progressive.rebind.PageActivatorGenerator">
+    <when-type-assignable class="com.sjl.gwt.progressive.client.PageActivator"/>
+  </generate-with>
+</module>

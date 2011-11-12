@@ -1,0 +1,13 @@
+<projectDescription>
+  <name>progressive</name>
+  <comment>GWT library to support progressive-enhancement of a basic html. Like UiBinder, but with runtime templates. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>
